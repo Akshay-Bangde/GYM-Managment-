@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary"> #cc00cc</color>
+    <color name="colorPrimaryDark">#008000</color>
+    <color name="purple"> #cc00cc</color>
+    <color name="grey">#a6a6a6</color>
+    <color name="yellow">#F39C12</color>
+    <color name="light_yellow">#ffd699</color>
+    <color name="yellow_round_btn_color">#ff9900</color>
+    <color name="white">#ffffff</color>
+    <color name="transparant">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="border_black">#808080</color>
+    <color name="green">#008000</color>
+    <color name="darkpurple">#800080</color>
+    <color name="red">#ff0000</color>
+    <color name="darkblue">#0000cc</color>
+    <color name="darkYellow">#ff9933</color>
+    <color name="statusBarColor">#e67300</color>
+    <color name="lightGreen">#00cc99</color>
+    <color name="skyblue">#33ccff</color>
+    <color name="orange">#ff704d</color>
+    <color name="green1">#00ff99</color>
+    <color name="dull_green">#009999</color>
+    <color name="pista">#99cc00</color>
+    <color name="pitch">#ff9999</color>
+    <color name="fint_grey">#f2f2f2</color>
+
+
+
+</resources>

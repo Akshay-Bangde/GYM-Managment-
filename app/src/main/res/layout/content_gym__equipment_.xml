@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/productLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_margin="@dimen/ten_dp"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/fifteen_dp"
+        android:backgroundTint="@color/fint_grey"
+        android:elevation="@dimen/ten_dp"
+        android:layout_marginBottom="@dimen/ten_dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/ten_dp"
+            >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Sr.No"
+            android:textSize="@dimen/fifteen_dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/eqp_sr_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="@dimen/fifteen_dp"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Transaction Id"
+                android:textSize="@dimen/fifteen_dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/eqp_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1945cc1"
+                android:textSize="@dimen/fifteen_dp"
+                android:layout_weight="3"
+               />
+
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               >
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Equipment Name"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/eqp_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dumb-bells"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:maxLines="1"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               >
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Description"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/eqp_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Branded imported from USA"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:maxLines="1"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Purchase Rate"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/eqp_purchase_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000"
+                    android:textSize="@dimen/fifteen_dp"
+                  />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               >
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Qty."
+                    android:textSize="@dimen/fifteen_dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/eqp_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="2"
+                    android:textSize="@dimen/fifteen_dp" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Net Amount"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/eqp_net_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RS 10000"
+                    android:textSize="@dimen/fifteen_dp"
+                 />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/ten_dp">
+
+
+                <Button
+                    android:id="@+id/eqpEdit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="Edit"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_yellow_button"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/fifty_dp"
+
+                    />
+                <Button
+                    android:id="@+id/eqpDelete"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:text="Delete"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_yellow_button"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/fifty_dp"
+                    android:layout_marginEnd="@dimen/fifty_dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

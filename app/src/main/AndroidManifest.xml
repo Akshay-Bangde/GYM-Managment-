@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        android:usesCleartextTraffic="true"
+
+        >
+        <activity
+            android:name=".activities.Physiotherapy_Treatment_Activity"
+            android:label=""
+            android:theme="@style/AppTheme"
+            />
+        <activity
+            android:name=".activities.SalaryListPayNow"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.AddMedicalHealth_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.AddFoodEntry_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.FoodEntryList_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.AddFoodCatgeory_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.FoodCategory_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_WaterIntake_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.WaterIntakeList_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.TrainingSchedule_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Enquiry_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Enquiry_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Workout_Exercise_list_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.BalanceSheet_Activity"
+            android:label="@string/title_activity_balance_sheet"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Member_Payment_Report_Activity"
+            android:label="@string/title_activity_membership_payment"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Expense_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Transaction_Report_Activity"
+            android:label="@string/title_activity_transaction_report"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Package_Payment_History_Activity"
+            android:label="@string/title_activity_package_payment_history"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Salary_List_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Expense_List_Activity"
+            android:label="@string/title_activity_expense__list_"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Sell_Product_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Sell_Product_List_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Diet_Plan_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Diet_List_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Product_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Product_List_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Supplier_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Suppliers_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Stock_List_Activity"
+            android:label="@string/title_activity_stock__list_"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Equipment_Acitivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Gym_Equipment_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Package_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Package_List_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.AddGymActivity_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.GymActivityList_Activity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Workout_ExerciseActivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Workout_CategoryActivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Duration_PeriodActivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Indiviual_Member_PaymentActivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Upcoming_Renew_ListActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Employee_AttendanceActivity"
+            android:label="@string/title_activity_add_employee__attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Employee_AttendanceActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Member_DeatailsActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Member_ListActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Member_AttendanceActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Member_AttendanceActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_GroupActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.MemberGroupListActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Add_Staff_Activity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Trainer_Employee_Activity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Renew_Activity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Home_Activity"
+            android:label="@string/title_activity_home"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.LaunchActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SignInActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

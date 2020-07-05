@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/statusBarColor</item>
+
+    </style>
+
+    <!-- style for navigation drawable -->
+    <style name="NavigationDrawerStyle">
+        <!-- text size in menu-->
+        <item name="android:textSize">16sp</item>
+        <item name="colorPrimary">@color/darkYellow</item>
+        <item name="android:typeface">serif</item>
+
+        <!-- Background color when SELECTED -->
+        <!-- <item name="colorControlHighlight">@color/red</item>-->
+
+        <!-- item size in menu-->
+        <item name="android:listPreferredItemHeightSmall">50dp</item>
+        <item name="listPreferredItemHeightSmall">50dp</item>
+
+        <!-- item padding left in menu-->
+        <item name="android:listPreferredItemPaddingLeft">8dp</item>
+        <item name="listPreferredItemPaddingLeft">8dp</item>
+
+        <!-- item padding right in menu-->
+        <item name="android:listPreferredItemPaddingRight">8dp</item>
+        <item name="listPreferredItemPaddingRight">8dp</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient_spinner</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:popupBackground">#ffffff</item>
+        <item name="android:textSize">@dimen/seventeen_sp</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- alert dailog customize theme-->
+    <style name="AlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/darkYellow</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/darkYellow</item>
+    </style>
+
+    <!-- date picker style-->
+    <style name="DialogTheme" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="colorAccent">@color/darkYellow</item>
+    </style>
+
+    <!-- styling for input edit text-->
+    <style name="InputLabel">
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="colorControlNormal">@color/border_black</item>
+        <item name="colorControlActivated">@color/darkYellow</item>
+        <item name="android:textSize">@dimen/seventeen_sp</item>
+    </style>
+
+    <!--styling for progress bar -->
+    <style name="WhiteAccent">
+        <item name="colorAccent">@color/white</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="orangeAccent">
+        <item name="colorAccent">@color/darkYellow</item> <!-- Whatever color you want-->
+    </style>
+
+
+    <style name="AppTheme.OrangeAccent">
+        <item name="colorAccent">@color/darkYellow</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="SearchViewTheme" parent="Widget.AppCompat.SearchView.ActionBar">
+        <item name="layout">@layout/activity_package_list</item>
+        <item name="commitIcon">@drawable/search_icon</item>
+        <item name="colorControlHighlight">@color/darkYellow</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/darkYellow</item>
+    </style>
+
+
+</resources>

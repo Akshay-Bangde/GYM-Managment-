@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten_dp"
+        android:backgroundTint="@color/fint_grey"
+        android:baselineAligned="false"
+        app:cardCornerRadius="@dimen/fifteen_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/twenty_dp"
+                    android:text="Sr.No"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ID"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/id"
+                    android:text="1"
+                    android:textColor="@color/border_black"
+                    android:textSize="@dimen/fifteen_sp" />
+
+                <TextView
+                    android:id="@+id/activityName"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id"
+                    android:layout_marginStart="@dimen/twenty_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="Package Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ACTIVITYNAME"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ID"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_toRightOf="@+id/activityName"
+                    android:text="Zoomba"
+                    android:textColor="@color/border_black"
+                    android:textSize="@dimen/fifteen_sp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/validity"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ACTIVITYNAME"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="Validity"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/VALIDITY"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ACTIVITYNAME"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_toRightOf="@+id/validity"
+                    android:text="2 weeks"
+                    android:textColor="@color/border_black"
+                    android:textSize="@dimen/fifteen_sp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/packageamount"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/VALIDITY"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="Package Amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/PACKAGEAMOUNT"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/VALIDITY"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_toRightOf="@+id/packageamount"
+                    android:text="2000"
+                    android:textColor="@color/border_black"
+                    android:textSize="@dimen/fifteen_sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/activityamount"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PACKAGEAMOUNT"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="Activity Amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ACTIVITYAMOUNT"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PACKAGEAMOUNT"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_toRightOf="@+id/activityamount"
+                    android:text="5000"
+                    android:textColor="@color/border_black"
+                    android:textSize="@dimen/fifteen_sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/totalamount"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ACTIVITYAMOUNT"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="Total Amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TOTALAMOUNT"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ACTIVITYAMOUNT"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_toRightOf="@+id/totalamount"
+                    android:text="7000"
+                    android:textColor="@color/border_black"
+                    android:textSize="@dimen/fifteen_sp"
+
+                    />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/ten_dp"
+
+                >
+
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/fourty"
+                    android:background="@drawable/round_yellow_button"
+                    android:text="@string/edit"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="@dimen/thirty_dp"
+
+                    />
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/fourty"
+                    android:background="@drawable/round_yellow_button"
+                    android:text="@string/delete"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/thirty_dp"
+                    android:textAllCaps="false"
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

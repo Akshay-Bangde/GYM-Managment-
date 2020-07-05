@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Add_WaterIntake_Activity"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+
+    >
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/AddWaterintake"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty_one_sp"
+                android:textStyle="bold"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center_horizontal" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/fifteen_dp"
+        android:layout_marginEnd="@dimen/fifteen_dp"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/Enter_Numbar_of_Glasses"
+            android:textSize="@dimen/fifteen_sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:layout_marginStart="@dimen/five_dp"
+            android:layout_marginBottom="8dp"
+            android:text="*"
+            android:textSize="@dimen/fifteen_sp"
+            android:textColor="@color/red"
+            />
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/numberGlass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+            android:background="@drawable/rounded_corner_for_payments"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:theme="@style/InputLabel"
+            android:inputType="number"
+
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty_dp"
+            android:layout_marginTop="@dimen/fifty_dp"
+            android:layout_marginEnd="@dimen/thirty_dp"
+            android:layout_marginBottom="@dimen/thirty_dp"
+            android:background="@drawable/round_yellow_button">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/seventeen_sp" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:theme="@style/WhiteAccent"
+                android:visibility="gone"
+
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

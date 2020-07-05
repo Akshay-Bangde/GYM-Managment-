@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Upcoming_Renew_ListActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:id="@+id/coordinator_layout"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_upcoming_renew_list"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center_horizontal" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/twenty_dp"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fiftyfive_dp"
+        android:layout_marginStart="@dimen/fifteen_dp"
+        android:layout_marginEnd="@dimen/fifteen_dp"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Full_Name"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginBottom="8dp"
+                android:text="*"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+            android:background="@drawable/rounded_corner_for_payments"
+            android:layout_marginTop="@dimen/five_dp"
+
+            />
+
+        <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/diet_plan"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/black"
+                />
+        <Spinner
+            android:id="@+id/dietPlanSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+            style="@style/spinner_style"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/batch"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginBottom="8dp"
+                android:text="*"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/batchSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+            style="@style/spinner_style"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="@dimen/one_twenty_dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirty_dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Date_of_joning"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirty_dp"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginBottom="8dp"
+                android:text="*"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+
+        <EditText
+
+            android:id="@+id/doj"
+            android:layout_width="@dimen/one_fifty_dp"
+            android:layout_height="@dimen/fourty"
+            android:background="@drawable/trasnsparent_round_shape"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/seventeen_sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="@dimen/one_twenty_dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/thirty_dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/renew_date"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/thirty_dp"
+                    android:layout_marginStart="@dimen/five_dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="*"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/red"
+                    />
+            </LinearLayout>
+
+            <EditText
+
+                android:id="@+id/renewDate"
+                android:layout_width="@dimen/one_fifty_dp"
+                android:layout_height="@dimen/fourty"
+                android:background="@drawable/trasnsparent_round_shape"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/seventeen_sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/selectPackage"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginBottom="8dp"
+                android:text="*"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+
+
+        <Spinner
+            android:id="@+id/packageSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+            style="@style/spinner_style"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Package_amount"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginBottom="8dp"
+                android:text="*"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/packageCharge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+            android:background="@drawable/rounded_corner_for_payments"
+            android:layout_marginTop="@dimen/five_dp"
+            android:textColor="@color/black"
+            android:text="0"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/personal_trainer"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginBottom="8dp"
+                android:text="*"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/personalTrainerSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+            style="@style/spinner_style"
+            />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/personalTrainerlayout">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/trainer"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginBottom="8dp"
+                android:text="*"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/TrainerSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+            style="@style/spinner_style"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/trainer_charge"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginBottom="8dp"
+                android:text="*"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/trainerCharge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+            android:background="@drawable/rounded_corner_for_payments"
+            android:layout_marginTop="@dimen/five_dp"
+            android:textColor="@color/black"
+            android:text="0"
+
+            />
+</LinearLayout>
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty_dp"
+            android:layout_marginTop="@dimen/fifty_dp"
+            android:layout_marginEnd="@dimen/thirty_dp"
+            android:layout_marginBottom="@dimen/thirty_dp"
+            android:background="@drawable/round_yellow_button"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/seventeen_sp" />
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/fint_grey"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/ten_dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="@dimen/one_ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:textColor="@color/black"
+                    android:text="Sr.No"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/ID"
+                    android:layout_width="@dimen/one_ten_dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/border_black"
+                    android:text="1"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/id" />
+
+                <TextView
+                    android:id="@+id/activityName"
+                    android:layout_width="@dimen/one_ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:text="Activity Name"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/ACTIVITYNAME"
+                    android:layout_width="@dimen/one_ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ID"
+                    android:textColor="@color/border_black"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/activityName"
+                    android:text="Zoomba"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:layout_marginTop="@dimen/five_dp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/charges"
+                    android:layout_width="@dimen/one_ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ACTIVITYNAME"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:text="Charges"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/CHARGES"
+                    android:layout_width="@dimen/one_ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ACTIVITYNAME"
+                    android:textColor="@color/border_black"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/charges"
+                    android:text="2000"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:layout_marginTop="@dimen/five_dp"
+
+                    />
+
+
+
+
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/ten_dp"
+
+                >
+
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/fourty"
+                    android:background="@drawable/round_yellow_button"
+                    android:text="@string/edit"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="@dimen/thirty_dp"
+
+                    />
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/fourty"
+                    android:background="@drawable/round_yellow_button"
+                    android:text="@string/delete"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/thirty_dp"
+                    android:textAllCaps="false"
+
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

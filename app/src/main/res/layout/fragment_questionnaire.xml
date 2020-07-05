@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Questionnaire_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/historyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/history"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/history_heart_problem"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/bloodPressureLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/bloodPressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/increased_blood"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/chronicIllnessLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/chronicIllness"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/chronic_illness"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/physicalExerciseLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/physicalExercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/difficulty_physical_exercise"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/advise_exerciseLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/advise_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/advise_exercise"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/recentSurgeryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/recent_surgery"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/recent_surgery"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/history_of_breathing_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/history_of_breathing"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/history_of_breathing"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/muscleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/muscle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/muscle"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/diabetesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/diabetes"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/diabetes"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/cigratteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/cigratte"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/ciagrette_smoking"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/bloodCholestrolLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/bloodCholestrol"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/increase_blood_cholestrol"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/obesityLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/obesity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/obesity"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/thirty_dp"
+                android:layout_marginTop="@dimen/fifty_dp"
+                android:layout_marginEnd="@dimen/thirty_dp"
+                android:layout_marginBottom="@dimen/fifty_dp"
+                android:background="@drawable/round_yellow_button">
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/seventeen_sp" />
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:theme="@style/WhiteAccent"
+                    android:visibility="gone"
+
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

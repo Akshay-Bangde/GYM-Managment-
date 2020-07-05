@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/fint_grey">-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/ten_dp"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/expenseList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/expense_master"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/expense_master"
+                    android:textSize="@dimen/thirteen_sp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/paymentHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/package_payment"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/package_payment_history"
+                    android:textSize="@dimen/thirteen_sp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/salaryManage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/salary_management"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/salary_management"
+                    android:textSize="@dimen/thirteen_sp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/memberPaymentReport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/membership_payment"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/membership_payment"
+                    android:textSize="@dimen/thirteen_sp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/balanceSheet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/balance_sheet"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/balance_sheet"
+                    android:textSize="@dimen/thirteen_sp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/TranReport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/transaction_report"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/transaction_report"
+                    android:textSize="@dimen/thirteen_sp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
+<!--
+</ScrollView>-->

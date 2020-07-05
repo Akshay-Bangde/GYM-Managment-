@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:id="@+id/gymLinearlayout">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/PopupOverlay"
+            >
+            <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_profile"
+            android:textColor="@color/white"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center_horizontal" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/white"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/profile_image"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:elevation="5dp"
+                android:padding="@dimen/five_dp"
+                />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:theme="@style/InputLabel"
+            >
+            <EditText
+                android:id="@+id/gym_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:hint="@string/gymName"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:theme="@style/InputLabel"
+            >
+            <EditText
+                android:id="@+id/gymEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:hint="@string/gymEmail"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:theme="@style/InputLabel"
+            >
+            <EditText
+                android:id="@+id/gymContact_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:hint="@string/Contact_no"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:maxLength="16"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:theme="@style/InputLabel"
+            >
+            <EditText
+                android:id="@+id/currencyType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:hint="@string/currenceType"
+                android:inputType="textCapCharacters"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:maxLength="3"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:theme="@style/InputLabel"
+            >
+            <EditText
+                android:id="@+id/investmentAmount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:hint="@string/investmentAmount"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:maxLength="30"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:theme="@style/InputLabel"
+            >
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:hint="@string/Username"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:theme="@style/InputLabel"
+            >
+            <EditText
+                android:id="@+id/gymAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:hint="@string/Address"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:theme="@style/InputLabel"
+            >
+            <EditText
+                android:id="@+id/invoiceTerms"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:hint="@string/invoiceTerms"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:theme="@style/InputLabel"
+            >
+            <EditText
+                android:id="@+id/invoiceGreetings"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:hint="@string/Invoice_Greetings"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:theme="@style/InputLabel"
+            >
+            <EditText
+                android:id="@+id/gymUpcomingRenewal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:hint="@string/Upcoming_renewals"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:maxLength="30"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/gymUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifty_dp"
+            android:layout_marginBottom="@dimen/thirty_dp"
+            android:layout_marginStart="@dimen/fourty"
+            android:layout_marginEnd="@dimen/fourty"
+            android:background="@drawable/round_yellow_button"
+            android:text="@string/update"
+            android:textColor="@color/white"
+            android:textSize="@dimen/seventeen_sp"/>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+

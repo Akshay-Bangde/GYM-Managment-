@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/fint_grey"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginBottom="@dimen/five_dp"
+                >
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="@dimen/one_fifteen_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Sr.No"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/ID"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/id"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:text="1"
+                    android:textColor="@color/border_black" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="@dimen/one_fifteen_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id"
+                    android:layout_marginStart="20dp"
+                    android:text="Name"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/NAME"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ID"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/name"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:text="Akshay Bangde"
+                    android:textColor="@color/border_black" />
+
+                <TextView
+                    android:id="@+id/doj"
+                    android:layout_width="@dimen/one_fifteen_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/NAME"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/Date_of_joning"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/DOJ"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/NAME"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_toRightOf="@+id/doj"
+                    android:text="1/5/2015"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/border_black" />
+
+
+                <TextView
+                    android:id="@+id/contact_no"
+                    android:layout_width="@dimen/one_fifteen_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DOJ"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Contact No."
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/CONTACTNO"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DOJ"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/contact_no"
+                    android:text="1234564789"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/border_black" />
+
+
+                <TextView
+                    android:id="@+id/employeeType"
+                    android:layout_width="@dimen/one_fifteen_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact_no"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:text="Employee Type"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/EMPLOYEETYPE"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact_no"
+                    android:textColor="@color/border_black"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/employeeType"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:text="trainer"
+                    />
+
+                <TextView
+                    android:id="@+id/salary"
+                    android:layout_width="@dimen/one_fifteen_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EMPLOYEETYPE"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Salary/Charge"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/SALARY"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EMPLOYEETYPE"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/salary"
+                    android:text="3000"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/border_black" />
+
+                <TextView
+                    android:id="@+id/paidSalary"
+                    android:layout_width="@dimen/one_fifteen_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/salary"
+                    android:layout_marginStart="20dp"
+                    android:text="Paid Salary"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/TRAINING_CARGE"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SALARY"
+                    android:textColor="@color/border_black"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/paidSalary"
+                    android:text="1000"
+                    />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/ten_dp"
+
+                >
+
+                <Button
+                    android:id="@+id/payNow"
+                    android:layout_width="@dimen/one_ten_dp"
+                    android:layout_height="@dimen/fourty"
+                    android:background="@drawable/round_yellow_button"
+                    android:text="Pay Now"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/thirty_dp"
+                    android:textAllCaps="false"
+
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

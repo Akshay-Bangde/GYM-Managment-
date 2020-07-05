@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corner_white_background">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/twenty_sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/ten_dp"
+        />
+
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/fifteen_sp"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:layout_marginBottom="@dimen/twenty_dp"
+
+        >
+
+        <Button
+            android:id="@+id/text_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/thirty_dp"
+            android:background="@drawable/round_yellow_button"
+            android:text="@string/signin_no"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/seventeen_sp" />
+
+        <Button
+            android:id="@+id/text_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signin_yes"
+            android:textSize="@dimen/seventeen_sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/thirty_dp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_yellow_button"
+            android:textAllCaps="false"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

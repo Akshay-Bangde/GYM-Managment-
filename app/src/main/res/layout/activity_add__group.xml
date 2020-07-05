@@ -1,0 +1,385 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.Add_GroupActivity"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/PopupOverlay" >
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_add_group"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center_horizontal" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/fifteen_dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/fiftyfive_dp"
+                android:theme="@style/InputLabel">
+
+                <EditText
+                    android:id="@+id/group_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:hint="@string/group_name"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <EditText
+                    android:id="@+id/contact_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:hint="@string/contact_person"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <EditText
+                    android:id="@+id/contact_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:hint="@string/Mobile_NO"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <EditText
+                    android:id="@+id/email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:hint="@string/email_id"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:hint="@string/Address"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <EditText
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:hint="@string/State"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:hint="@string/City"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <EditText
+                    android:id="@+id/total_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:hint="@string/total_member"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:text="@string/Select_Package"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:layout_marginStart="@dimen/five_dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+            </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/package_spinner"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/ten_dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:text="@string/Package_amount"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@id/totalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_marginStart="@dimen/five_dp"
+                    android:text="0.0"
+                    android:textColor="@color/darkblue" />
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</LinearLayout>
+           <!-- <CheckBox
+                android:id="@+id/pt_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:buttonTint="@color/darkYellow"
+                android:text="@string/personal_trainer"
+                android:textColor="@color/black" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:text="@string/personal_trainer"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:layout_marginStart="@dimen/five_dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/selectTrainerSpinner"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/ten_dp" />
+
+            // Trainer field is visible when user click on check box
+
+            <LinearLayout
+                android:id="@+id/pt_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:text="@string/trainer"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fifteen_dp"
+                        android:layout_marginStart="@dimen/five_dp"
+                        android:text="*"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/trainer_spinner"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginTop="@dimen/ten_dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:text="@string/trainer_charge"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/trainerCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_marginStart="@dimen/five_dp"
+                        android:text="0.0"
+                        android:textColor="@color/darkblue" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+       <!--     <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="@string/total_amount"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="0.0"
+                android:textColor="@color/darkblue" />
+-->
+            <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_yellow_button"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginTop="@dimen/fifty_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:layout_marginBottom="@dimen/thirty_dp"
+            >
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparant"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/seventeen_sp" />
+                <ProgressBar
+                    android:id="@+id/pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:theme="@style/WhiteAccent"
+
+                    />
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SalaryListPayNow"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paysalary"
+                android:textSize="@dimen/twenty_one_sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/fifteen_dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basic Salary"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/basicSalary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner_for_payments_grey"
+
+            android:theme="@style/InputLabel"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bonus"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/bonus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner_for_payments"
+
+            android:theme="@style/InputLabel"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hours"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/hours"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner_for_payments"
+
+            android:theme="@style/InputLabel"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overtime"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/overtime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner_for_payments_grey"
+
+            android:theme="@style/InputLabel"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net Salary"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/netsalary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner_for_payments_grey"
+
+            android:theme="@style/InputLabel"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarks"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/remarks"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner_for_payments"
+
+            android:theme="@style/InputLabel"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Payment Type"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/paymentTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:theme="@style/InputLabel"
+            style="@style/spinner_style"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/paymentTypelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:id="@+id/cheque_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_option_spinner"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="@string/cheque_no"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/four_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="*"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/chequeNO"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourty"
+            android:layout_below="@+id/cheque_no"
+            android:layout_marginTop="@dimen/five_dp"
+            android:background="@drawable/transparent_black_round"
+            android:inputType="text"
+            android:paddingStart="@dimen/five_dp"
+            android:textColor="@color/black"
+            android:theme="@style/InputLabel" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty_dp"
+            android:layout_marginTop="@dimen/fifty_dp"
+            android:layout_marginEnd="@dimen/thirty_dp"
+            android:layout_marginBottom="@dimen/thirty_dp"
+            android:background="@drawable/round_yellow_button">
+
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/update"
+                android:textColor="@color/white"
+                android:textSize="@dimen/seventeen_sp"
+
+                />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:theme="@style/WhiteAccent"
+                android:visibility="gone"
+
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+</LinearLayout>

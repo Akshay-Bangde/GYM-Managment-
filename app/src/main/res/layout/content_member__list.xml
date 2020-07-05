@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/fint_grey"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginBottom="@dimen/five_dp"
+                >
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="@dimen/one_fourty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Sr.No"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/ID"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/id"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:text="1"
+                    android:textColor="@color/border_black" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="@dimen/one_fourty"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id"
+                    android:layout_marginStart="20dp"
+                    android:text="Name"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/NAME"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ID"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/name"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:text="Akshay Bangde"
+                    android:textColor="@color/border_black" />
+
+                <TextView
+                    android:id="@+id/punchId"
+                    android:layout_width="@dimen/one_fourty"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginStart="20dp"
+                    android:text="Punch Id : "
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/PUNCHID"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/NAME"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_toRightOf="@+id/punchId"
+                    android:text="fdsafdsdfdasfd"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/border_black" />
+
+
+                <TextView
+                    android:id="@+id/contact_no"
+                    android:layout_width="@dimen/one_fourty"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PUNCHID"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Contact No."
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/CONTACTNO"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PUNCHID"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/contact_no"
+                    android:text="1234564789"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/border_black" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="@dimen/one_fourty"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CONTACTNO"
+                    android:layout_marginStart="20dp"
+                    android:text="Date of Birth"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/DOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CONTACTNO"
+                    android:layout_marginEnd="@dimen/twenty_dp"
+                    android:textColor="@color/border_black"
+                    android:layout_marginStart="10dp"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:layout_toRightOf="@+id/dob"
+                    android:text="1999-02-02"
+                    />
+
+                <TextView
+                    android:id="@+id/doj"
+                    android:layout_width="@dimen/one_fourty"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DOB"
+                    android:layout_marginStart="20dp"
+                    android:text="Date of Joining"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/DOJ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DOB"
+                    android:textColor="@color/border_black"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="@dimen/twenty_dp"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:layout_toRightOf="@+id/doj"
+                    android:text="1999-02-02"
+                    />
+
+                <TextView
+                    android:id="@+id/remaining_amount"
+                    android:layout_width="@dimen/one_fourty"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DOJ"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/Remaining_amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/REMANING_AMOUNT"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DOJ"
+                    android:textColor="@color/border_black"
+                    android:layout_marginStart="10dp"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:layout_toRightOf="@+id/remaining_amount"
+                    android:text="2000"
+                    />
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="@dimen/one_fourty"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/REMANING_AMOUNT"
+                    android:layout_marginStart="20dp"
+                    android:text="Status"
+                    android:layout_marginTop="@dimen/seven_dp"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/STATUS"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/REMANING_AMOUNT"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/status"
+                    android:text="status"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_activestatusbtn"
+                    android:padding="@dimen/four_dp"
+                    android:layout_marginTop="@dimen/seven_dp"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/view"
+                    android:layout_width="@dimen/one_fourty"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/STATUS"
+                    android:layout_marginStart="20dp"
+                    android:text="Views"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/medicalHistory"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:layout_toRightOf="@+id/view"
+                    android:layout_marginStart="10dp"
+                    android:text="Medical History"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/fifteen_sp"
+                     />
+                <TextView
+                    android:id="@+id/dietPlan"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/medicalHistory"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/view"
+                    android:text="Diet Plan"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/fifteen_sp"
+                     />
+                <TextView
+                    android:id="@+id/packages"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dietPlan"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/view"
+                    android:text="Package"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/fifteen_sp"
+                     />
+                <TextView
+                    android:id="@+id/trainingSchedule"
+                    android:layout_width="@dimen/one_thirty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/packages"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/view"
+                    android:text="Training Schedule"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/fifteen_sp"
+                     />
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/ten_dp"
+                android:weightSum="4"
+                >
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/fourty"
+                    android:background="@drawable/round_yellow_button"
+                    android:text="@string/edit"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    />
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/fourty"
+                    android:background="@drawable/round_yellow_button"
+                    android:text="@string/delete"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    />
+                <Button
+                    android:id="@+id/payNow"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/fourty"
+                    android:background="@drawable/round_yellow_button"
+                    android:text="@string/paynow"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    />
+                <Button
+                    android:id="@+id/viewhistory"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/fourty"
+                    android:background="@drawable/round_yellow_button"
+                    android:text="@string/viewhistory"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

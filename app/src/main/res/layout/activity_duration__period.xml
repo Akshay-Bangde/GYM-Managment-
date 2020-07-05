@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Duration_PeriodActivity"
+    android:focusableInTouchMode="true"
+   >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_duration__period"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center_horizontal" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fiftyfive_dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/duration"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginBottom="8dp"
+                android:text="*"
+                android:textSize="@dimen/fifteen_sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/durationInput"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_marginEnd="@dimen/fifteen_dp"
+            android:layout_marginBottom="@dimen/five_dp"
+            android:layout_marginStart="@dimen/seventy_dp"
+            android:theme="@style/InputLabel"
+            >
+
+            <EditText
+                android:id="@+id/duration_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtyfive"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/five_dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="3" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/one_fifteen_dp"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+            android:id="@+id/period_type"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_marginStart="@dimen/fifteen_dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/period_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen_sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_marginStart="@dimen/five_dp"
+            android:layout_marginBottom="8dp"
+            android:text="*"
+            android:textSize="@dimen/fifteen_sp"
+            android:textColor="@color/red"
+            />
+    </LinearLayout>
+        <Spinner
+            android:id="@+id/period_type_spinner"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+            android:layout_marginStart="@dimen/fifty_dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/fifteen_dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/one_seventy_dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="@dimen/one_thirty_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/five_dp"
+            android:layout_marginEnd="@dimen/thirty_dp"
+            android:background="@drawable/round_yellow_button">
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="@dimen/one_thirty_dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/seventeen_sp" />
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:theme="@style/WhiteAccent"
+                android:visibility="gone"
+
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:id="@+id/ll_progresbar"
+
+        >
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pagination"
+        android:layout_marginTop="240dp"
+        app:srl_direction="bottom"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="240dp"
+            android:orientation="vertical"
+            app:reverseLayout="true"
+            tools:listitem="@layout/content_duration_period">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:theme="@style/orangeAccent"
+
+            />
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

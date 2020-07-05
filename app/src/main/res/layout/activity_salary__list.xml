@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Salary_List_Activity"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:id="@+id/coordinatorLayout"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_salary_managment"
+                android:textSize="@dimen/twenty_one_sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/seventy_dp"
+        android:layout_marginStart="@dimen/fifteen_dp"
+        android:layout_marginEnd="@dimen/fifteen_dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/staffNameSpinner"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+             />
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="@dimen/one_fifty_dp"
+            android:layout_height="@dimen/fourtyfive"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@drawable/round_yellow_button"
+            android:text="@string/search"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:shadowColor="@color/grey"
+            android:textSize="@dimen/seventeen_sp"
+            />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:id="@+id/ll_progresbar"
+
+        >
+
+        <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/pagination"
+            android:layout_marginTop="@dimen/two_hun_dp"
+            app:srl_direction="bottom"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:reverseLayout="true"
+                tools:listitem="@layout/content_salary_list">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:theme="@style/orangeAccent"
+
+            />
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/fint_grey">-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/ten_dp"
+    android:weightSum="3"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/gym_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/gym_equipment"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/gym_equipment"
+                    android:textSize="@dimen/thirteen_sp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/dietPlan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/diet_plan"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/diet_plan"
+                    android:textSize="@dimen/thirteen_sp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/add_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/add_product"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/add_product"
+                    android:textSize="@dimen/thirteen_sp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/sellProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/sell_product"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/sell_product"
+                    android:textSize="@dimen/thirteen_sp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/stock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/stock_management"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/stock_management"
+                    android:textSize="@dimen/thirteen_sp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/suppliers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/suppliers"
+                    android:layout_marginTop="@dimen/twenty_dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/suppliers"
+                    android:textSize="@dimen/thirteen_sp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
+<!--
+</ScrollView>-->

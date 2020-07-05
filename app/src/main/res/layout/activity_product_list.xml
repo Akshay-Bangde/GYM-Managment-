@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Product_List_Activity"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity__product_list"
+                android:textSize="@dimen/twenty_one_sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/seventy_dp"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/fifteen_dp"
+            android:layout_marginEnd="@dimen/fifteen_dp"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:textSize="@dimen/seventeen_sp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:textSize="@dimen/seventeen_sp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/productSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive"
+            style="@style/spinner_style"
+           android:layout_marginEnd="@dimen/fifteen_dp"
+            android:layout_marginStart="@dimen/fifteen_dp"/>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="@dimen/one_fifty_dp"
+            android:layout_height="@dimen/fourtyfive"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:background="@drawable/round_yellow_button"
+            android:text="@string/search"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:shadowColor="@color/grey"
+            android:textSize="@dimen/seventeen_sp"
+            />
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:id="@+id/ll_progresbar"
+
+        >
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/pagination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/two_twentydp"
+        app:srl_direction="bottom">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pro_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="@dimen/ten_dp"
+            tools:listitem="@layout/content_product_list">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:theme="@style/orangeAccent"
+
+        />
+</FrameLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/darkYellow"
+        app:srcCompat="@drawable/add_icon" />
+</android.support.design.widget.CoordinatorLayout>

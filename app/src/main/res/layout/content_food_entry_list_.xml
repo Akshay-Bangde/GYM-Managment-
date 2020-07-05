@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/fint_grey"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginBottom="@dimen/five_dp"
+                >
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="@dimen/one_sixty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Sr.No"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/ID"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/id"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:text="1"
+                    android:textColor="@color/border_black" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="@dimen/one_sixty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id"
+                    android:layout_marginStart="20dp"
+                    android:text="Food Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/NAME"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ID"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/name"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:text="Fruits"
+                    android:textColor="@color/border_black" />
+
+
+                <TextView
+                    android:id="@+id/uom"
+                    android:layout_width="@dimen/one_sixty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginStart="20dp"
+                    android:text="UOM"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/UOM"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/NAME"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_toRightOf="@+id/calorie"
+                    android:text="22"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/border_black" />
+
+                <TextView
+                    android:id="@+id/calorie"
+                    android:layout_width="@dimen/one_sixty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/uom"
+                    android:layout_marginStart="20dp"
+                    android:text="Calorie"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/CALORIES"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/UOM"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_toRightOf="@+id/uom"
+                    android:text="22"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/border_black" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="@dimen/one_sixty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calorie"
+                    android:layout_marginStart="20dp"
+                    android:text="Description"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/DESCRIPTION"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CALORIES"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_toRightOf="@+id/description"
+                    android:text="22"
+                    android:textColor="@color/border_black"
+                    android:textSize="@dimen/fifteen_sp" />
+
+                <TextView
+                    android:id="@+id/foodcatname"
+                    android:layout_width="@dimen/one_sixty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DESCRIPTION"
+                    android:layout_marginStart="20dp"
+                    android:text="Food Category Name"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/FOODCATNAME"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DESCRIPTION"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_toRightOf="@+id/foodcatname"
+                    android:text="22"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/border_black" />
+
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="@dimen/one_sixty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/FOODCATNAME"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/seven_dp"
+                    android:text="Status"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/STATUS"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/FOODCATNAME"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/status"
+                    android:text="status"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_activestatusbtn"
+                    android:padding="@dimen/four_dp"
+                    android:layout_marginTop="@dimen/seven_dp"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/ten_dp"
+
+                >
+
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/fourty"
+                    android:background="@drawable/round_yellow_button"
+                    android:text="@string/edit"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="@dimen/thirty_dp"
+
+                    />
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/fourty"
+                    android:background="@drawable/round_yellow_button"
+                    android:text="@string/delete"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/thirty_dp"
+                    android:textAllCaps="false"
+
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

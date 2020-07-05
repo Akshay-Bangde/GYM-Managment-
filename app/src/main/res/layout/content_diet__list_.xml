@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/dietLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_marginTop="@dimen/ten_dp"
+    android:layout_marginStart="@dimen/ten_dp"
+    android:layout_marginEnd="@dimen/ten_dp"
+
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/fifteen_dp"
+        app:cardBackgroundColor="@color/fint_grey"
+        android:layout_marginBottom="@dimen/ten_dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/ten_dp"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sr.No"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/d_srno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Diet_Plan_Name"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/dietName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Diet_Plan_Name"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:maxLines="1"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Pre_Workout"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/preWork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Pre_Workout"
+                    android:textSize="@dimen/fifteen_sp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Post_Workout"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/postWork"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Post_Workout"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:layout_weight="3"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/Lunch"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+
+                <TextView
+                    android:id="@+id/lunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lunch"
+                    android:textSize="@dimen/fifteen_sp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Dinner"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+
+                <TextView
+                    android:id="@+id/dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Dinner"
+                    android:textSize="@dimen/fifteen_sp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/twenty_dp"
+                >
+
+            <Button
+                android:id="@+id/diet_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fourty"
+                android:background="@drawable/round_yellow_button"
+                android:gravity="center"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/twenty_dp"
+               />
+
+
+            <Button
+                android:id="@+id/diet_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fourty"
+                android:background="@drawable/round_yellow_button"
+                android:gravity="center"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/twenty_dp"
+               />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="two_dp">2dp</dimen>
+    <dimen name="four_dp">4dp</dimen>
+    <dimen name="five_dp">5dp</dimen>
+    <dimen name="seven_dp">7dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="fifteen_dp">15dp</dimen>
+    <dimen name="seventeen_dp">17dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="twenty_five_dp">25dp</dimen>
+    <dimen name="thirty_dp">30dp</dimen>
+    <dimen name="thirtyfive_dp">35dp</dimen>
+    <dimen name="fourty">40dp</dimen>
+    <dimen name="fourtyfive">45dp</dimen>
+    <dimen name="fifty_dp">50dp</dimen>
+    <dimen name="fiftyfive_dp">55dp</dimen>
+    <dimen name="sixty_dp">60dp</dimen>
+    <dimen name="sixty_five_dp">65dp</dimen>
+    <dimen name="seventy_dp">70dp</dimen>
+    <dimen name="eighty_dp">80dp</dimen>
+    <dimen name="eightyfive_dp">85dp</dimen>
+    <dimen name="eightySeven_dp">87dp</dimen>
+    <dimen name="ninty_dp">90dp</dimen>
+    <dimen name="hun_dp">100dp</dimen>
+
+    <dimen name="one_ten_dp">110dp</dimen>
+    <dimen name="one_fifteen_dp">115dp</dimen>
+    <dimen name="one_twenty_dp">120dp</dimen>
+    <dimen name="one_thirty_dp">130dp</dimen>
+    <dimen name="one_fourty">140dp</dimen>
+    <dimen name="one_fifty_dp">150dp</dimen>
+    <dimen name="one_sixty_dp">160dp</dimen>
+    <dimen name="one_seventy_dp">170dp</dimen>
+    <dimen name="one_eighty_dp">180dp</dimen>
+    <dimen name="one_ninty_dp">190dp</dimen>
+    <dimen name="two_hun_dp">200dp</dimen>
+    <dimen name="two_hunfive_dp">205dp</dimen>
+
+    <dimen name="two_tendp">210dp</dimen>
+    <dimen name="two_twentydp">220dp</dimen>
+    <dimen name="two_thirtydp">230dp</dimen>
+    <dimen name="two_fourtydp">240dp</dimen>
+    <dimen name="two_fiftydp">250dp</dimen>
+    <dimen name="two_sixtydp">260dp</dimen>
+    <dimen name="two_eightydp">280dp</dimen>
+    <dimen name="three_hundp">300dp</dimen>
+
+
+    <dimen name="two_sp">2sp</dimen>
+    <dimen name="five_sp">5sp</dimen>
+    <dimen name="ten_sp">10sp</dimen>
+    <dimen name="thirteen_sp">13sp</dimen>
+    <dimen name="sixteenNineSp">16.9sp</dimen>
+    <dimen name="fifteen_sp">15sp</dimen>
+    <dimen name="seventeen_sp">17sp</dimen>
+    <dimen name="twenty_sp">20sp</dimen>
+    <dimen name="twenty_one_sp">21sp</dimen>
+    <dimen name="twenty_four_sp">24sp</dimen>
+    <dimen name="thirty_sp">30dp</dimen>
+    <dimen name="thirty_five_sp">35sp</dimen>
+    <dimen name="fourty_sp">40sp</dimen>
+    <dimen name="fifty_sp">50sp</dimen>
+    <dimen name="sixty_sp">60sp</dimen>
+    <dimen name="seventy_sp">70sp</dimen>
+    <dimen name="eighty_sp">80sp</dimen>
+    <dimen name="ninty_sp">19sp</dimen>
+    <dimen name="hun_sp">100sp</dimen>
+    <dimen name="two_hun">200sp</dimen>
+
+    <dimen name="three_hunsp">300sp</dimen>
+
+
+</resources>

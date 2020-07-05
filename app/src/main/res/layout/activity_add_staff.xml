@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.Add_Staff_Activity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/add_staff_layout">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/PopupOverlay"
+            >
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_staff"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center_horizontal" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/sixty_dp"
+                    android:elevation="5dp"
+                    android:padding="@dimen/five_dp"
+                    android:src="@drawable/profile_image"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fifteen_dp"
+                        android:layout_marginTop="@dimen/fifteen_dp"
+                        android:text="@string/staff_type"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fifteen_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/five_dp"
+                        android:layout_marginTop="@dimen/fifteen_dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/fifteen_sp" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/fields"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/full_nameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fiftyfive_dp"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:theme="@style/InputLabel">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:layout_marginStart="@dimen/fifteen_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_marginEnd="@dimen/fifteen_dp"
+                        android:hint="@string/full_name"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/seventeen_sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fiftyfive_dp"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:theme="@style/InputLabel">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/contact_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:layout_marginStart="@dimen/fifteen_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_marginEnd="@dimen/fifteen_dp"
+                        android:hint="@string/contact_no"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/seventeen_sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fiftyfive_dp"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:theme="@style/InputLabel">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/email_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:layout_marginStart="@dimen/fifteen_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_marginEnd="@dimen/fifteen_dp"
+                        android:hint="@string/email_id"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/seventeen_sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fiftyfive_dp"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:theme="@style/InputLabel">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:layout_marginStart="@dimen/fifteen_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_marginEnd="@dimen/fifteen_dp"
+                        android:hint="@string/state"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/seventeen_sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fiftyfive_dp"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:theme="@style/InputLabel">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:layout_marginStart="@dimen/fifteen_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_marginEnd="@dimen/fifteen_dp"
+                        android:hint="@string/City"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/seventeen_sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_dp"
+
+                    />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:background="@drawable/transparent_black_round"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:padding="@dimen/five_dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/seventeen_sp"
+                    android:theme="@style/InputLabel" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:text="@string/Salary"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_dp"
+
+                    />
+
+                <android.support.design.widget.TextInputEditText
+
+                    android:id="@+id/salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:background="@drawable/transparent_black_round"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/five_dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/seventeen_sp"
+                    android:theme="@style/InputLabel" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:text="@string/Bio_Matric_ID"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_dp"
+
+                    />
+
+                <android.support.design.widget.TextInputEditText
+
+                    android:id="@+id/Bio_Matric_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:background="@drawable/transparent_black_round"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/five_dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/seventeen_sp"
+                    android:theme="@style/InputLabel" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fiftyfive_dp"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:theme="@style/InputLabel">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/traning_charge"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:layout_marginStart="@dimen/fifteen_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_marginEnd="@dimen/fifteen_dp"
+                        android:layout_marginBottom="@dimen/ten_dp"
+                        android:backgroundTint="@color/black"
+                        android:hint="@string/personal_training_charge"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/seventeen_sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/birth_date"
+                        android:layout_width="@dimen/one_twenty_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/twenty_dp"
+                        android:layout_marginTop="@dimen/thirty_dp"
+                        android:layout_marginBottom="@dimen/ten_dp"
+                        android:text="@string/birthday"
+                        android:textColor="@color/darkYellow"
+                        android:textSize="@dimen/fifteen_sp" />
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/birth_date_generate"
+                        android:layout_width="@dimen/one_thirty_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/seventy_dp"
+                        android:layout_marginTop="@dimen/thirty_dp"
+                        android:layout_marginBottom="@dimen/ten_dp"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:text="MM/DD/YYYY"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fifteen_sp"
+                        android:theme="@style/InputLabel" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/date_of_joining"
+                        android:layout_width="@dimen/one_twenty_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/twenty_dp"
+                        android:layout_marginBottom="@dimen/ten_dp"
+                        android:text="@string/date_of_joning"
+                        android:textColor="@color/darkYellow"
+                        android:textSize="@dimen/fifteen_sp" />
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/joining_date_generate"
+                        android:layout_width="@dimen/one_thirty_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/seventy_dp"
+                        android:layout_marginBottom="@dimen/ten_dp"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fifteen_sp"
+                        android:theme="@style/InputLabel" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/twenty_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:text="@string/gender"
+                        android:textColor="@color/darkYellow"
+                        android:textSize="@dimen/fifteen_sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fifty_dp"
+                        android:layout_marginBottom="@dimen/ten_dp"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/maleRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/darkYellow"
+                            android:text="@string/male" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/femaleRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fourty"
+                            android:buttonTint="@color/darkYellow"
+                            android:text="@string/female" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifty_dp"
+                    android:layout_marginEnd="@dimen/thirty_dp"
+                    android:layout_marginBottom="@dimen/thirty_dp"
+                    android:background="@drawable/round_yellow_button">
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="@string/save"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/seventeen_sp"
+
+
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:theme="@style/WhiteAccent"
+                        android:visibility="gone"
+
+                        />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+</ScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".activities.Add_Expense_Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/title_activity_add_expense"
+                android:textColor="@color/white" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/fifteen_dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expense_date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/seventeen_sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" *"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/seventeen_sp" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/addexp_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fourty"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/trasnsparent_round_shape"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:text="@string/Reference_no"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/exp_refno"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtyfive"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/rounded_corner_for_payments"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/seventeen_sp"
+                android:theme="@style/InputLabel"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Bill_VoucherNo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/exp_billno"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtyfive"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/rounded_corner_for_payments"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/seventeen_sp"
+                android:theme="@style/InputLabel" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Party_No"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/exp_partname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/seventeen_sp"
+                android:theme="@style/InputLabel" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Party_GST_No"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/exp_party_gstno"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtyfive"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/rounded_corner_for_payments"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/seventeen_sp"
+                android:theme="@style/InputLabel" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sub_Amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/exp_subamount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtyfive"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/rounded_corner_for_payments"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/seventeen_sp"
+                android:theme="@style/InputLabel"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/GST_Applicable"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/GST_App"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/five_dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:orientation="horizontal"
+                    android:weightSum="9">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="SGST"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/seventeen_sp" />
+
+                    <EditText
+                        android:id="@+id/edt_sgst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/fourty"
+                        android:layout_weight="2.7"
+                        android:background="@drawable/rounded_corner_for_payments_grey"
+                        android:gravity="center"
+                        android:hint="SGST"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:textSize="@dimen/sixteenNineSp"
+                        android:theme="@style/InputLabel" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/five_dp"
+                        android:layout_marginEnd="@dimen/five_dp"
+                        android:layout_weight="1"
+                        android:text="%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/seventeen_sp" />
+
+
+                    <TextView
+                        android:id="@+id/sgstamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/fourty"
+                        android:layout_weight="2.8"
+                        android:background="@drawable/rounded_corner_for_payments_grey"
+                        android:gravity="center"
+                        android:hint="SGST Amount"
+                        android:textColorHint="@color/border_black"
+                        android:textSize="@dimen/seventeen_sp"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:orientation="horizontal"
+                    android:weightSum="9">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="CGST"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/seventeen_sp" />
+
+
+                    <EditText
+                        android:id="@+id/edt_cgst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/fourty"
+                        android:layout_weight="2.7"
+                        android:background="@drawable/rounded_corner_for_payments_grey"
+                        android:gravity="center"
+                        android:hint="CGST"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:textSize="@dimen/sixteenNineSp"
+                        android:theme="@style/InputLabel" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/five_dp"
+                        android:layout_marginEnd="@dimen/five_dp"
+                        android:layout_weight="1"
+                        android:text="%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/seventeen_sp" />
+
+
+                    <TextView
+                        android:id="@+id/cgstamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/fourty"
+                        android:layout_weight="2.8"
+                        android:background="@drawable/rounded_corner_for_payments_grey"
+                        android:gravity="center"
+                        android:hint="CGST Amount"
+                        android:textSize="@dimen/seventeen_sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:orientation="horizontal"
+                    android:weightSum="9">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="IGST "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/seventeen_sp" />
+
+
+                    <EditText
+                        android:id="@+id/edt_igst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/fourty"
+                        android:layout_weight="2.7"
+                        android:background="@drawable/rounded_corner_for_payments_grey"
+                        android:gravity="center"
+                        android:hint="IGST"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:textSize="@dimen/sixteenNineSp"
+                        android:theme="@style/InputLabel" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/five_dp"
+                        android:layout_marginEnd="@dimen/five_dp"
+                        android:layout_weight="1"
+                        android:text="%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/seventeen_sp" />
+
+
+                    <TextView
+                        android:id="@+id/igstamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/fourty"
+                        android:layout_weight="2.8"
+                        android:background="@drawable/rounded_corner_for_payments_grey"
+                        android:gravity="center"
+                        android:hint="IGST Amount"
+                        android:textSize="@dimen/seventeen_sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:text="@string/Payment_mode"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=" *"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/payment_mode"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtyfive"
+                android:layout_marginTop="@dimen/ten_dp"
+
+
+                />
+
+            <LinearLayout
+                android:id="@+id/chequeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:text="@string/cheque_no"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp" />
+
+                <EditText
+                    android:id="@+id/cheque_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourtyfive"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/rounded_corner_for_payments"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp"
+                    android:theme="@style/InputLabel" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grand_total"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+                <TextView
+                    android:id="@+id/exp_gtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourtyfive"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/rounded_corner_for_payments"
+                    android:text="0.00 "
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/seventeen_sp" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/thirty_dp"
+                android:layout_marginTop="@dimen/fourtyfive"
+                android:layout_marginEnd="@dimen/thirty_dp"
+                android:layout_marginBottom="@dimen/thirty_dp"
+                android:background="@drawable/round_yellow_button">
+
+                <Button
+                    android:id="@+id/exp_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/seventeen_sp" />
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:theme="@style/WhiteAccent"
+                    android:visibility="gone"
+
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

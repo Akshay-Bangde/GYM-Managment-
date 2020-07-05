@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Stock_List_Activity"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/full_nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftyfive_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:theme="@style/InputLabel"
+        >
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/full_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:layout_marginStart="@dimen/fifteen_dp"
+        android:layout_marginEnd="@dimen/fifteen_dp"
+        android:hint="@string/product_name"
+        android:inputType="text"
+        android:textSize="@dimen/seventeen_sp"
+        android:textColor="@color/black"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <include layout="@layout/content_stock__list_" />
+
+</LinearLayout>

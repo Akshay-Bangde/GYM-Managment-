@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Member_AttendanceActivity"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:id="@+id/coordinator_layout">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_member__attendance"
+                android:textSize="@dimen/twenty_one_sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixty_dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+        >
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/yeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen_sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/ten_dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/ninty_dp"
+            android:paddingLeft="@dimen/fifteen_dp"
+            android:paddingRight="@dimen/fifteen_dp"
+
+            >
+
+            <EditText
+
+                android:id="@+id/fromDate"
+                android:layout_width="@dimen/one_fifty_dp"
+                android:layout_height="@dimen/fourty"
+                android:background="@drawable/trasnsparent_round_shape"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/seventeen_sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <EditText
+
+                android:id="@+id/toDate"
+                android:layout_width="@dimen/one_fifty_dp"
+                android:layout_height="@dimen/fourty"
+                android:layout_marginStart="@dimen/twenty_dp"
+                android:background="@drawable/trasnsparent_round_shape"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/seventeen_sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftyfive_dp"
+        android:layout_marginTop="@dimen/one_fourty"
+        android:theme="@style/InputLabel"
+        >
+        <EditText
+            android:id="@+id/memberName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_marginStart="@dimen/fifteen_dp"
+            android:layout_marginEnd="@dimen/fifteen_dp"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="@dimen/one_fifty_dp"
+        android:layout_marginTop="@dimen/two_hunfive_dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_yellow_button"
+        android:text="@string/search"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:shadowColor="@color/grey"
+        android:textSize="@dimen/seventeen_sp"
+        android:layout_gravity="center_horizontal"
+            />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/darkYellow"
+        app:srcCompat="@drawable/add_icon" />
+
+</android.support.design.widget.CoordinatorLayout>

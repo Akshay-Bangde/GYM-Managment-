@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Package_Payment_History_Activity"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkYellow"
+            app:popupTheme="@style/PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five_dp">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five_dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:checkedButton="@id/individualRadioButton">
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/individualRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/individual"
+                android:layout_marginStart="@dimen/fourty"
+                android:buttonTint="@color/darkYellow"
+                android:layout_weight="1"
+                />
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/groupRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group"
+                android:layout_weight="1"
+                android:buttonTint="@color/darkYellow"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/full_nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftyfive_dp"
+        android:theme="@style/InputLabel"
+        android:layout_marginTop="@dimen/five_dp"
+         >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_marginStart="@dimen/fifteen_dp"
+            android:layout_marginEnd="@dimen/fifteen_dp"
+            android:hint="@string/memberNameType"
+            android:inputType="text"
+            android:textSize="@dimen/seventeen_sp"
+            android:textColor="@color/black"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

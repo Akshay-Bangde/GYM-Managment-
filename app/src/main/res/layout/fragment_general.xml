@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.General_Fragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+             android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:text="@string/member_name_str"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/five_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/fifteen_sp" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/memberName"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/weightLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/weight"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/heightLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/height"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/height"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/neckLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/neck"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/neck"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/shoulderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/shoulder"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/shoulder"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/chestLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/chest"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/chest"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/upperArmLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/upperArm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/upper_arm"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/foreArmLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/foreArm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/fore_arm"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/wristLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/wrist"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/wrist"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/upperAbdomenLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/upperAbdomen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/upper_abdomen"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lowerAbdomenLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/lowerAbdomen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/lower_abdomen"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/waistLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/waist"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/waist"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/hipsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/hips"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/hips"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/thighLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/thigh"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/thigh"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/calfLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/calf"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/calf"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ankleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftyfive_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_marginBottom="@dimen/fifty_dp"
+
+                android:theme="@style/InputLabel">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/ankle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginStart="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                     android:layout_marginEnd="@dimen/fifteen_dp"
+                    android:hint="@string/ankle"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/seventeen_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/thirty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginBottom="@dimen/fifty_dp"
+                android:layout_marginEnd="@dimen/thirty_dp"
+                android:background="@drawable/round_yellow_button"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/seventeen_sp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

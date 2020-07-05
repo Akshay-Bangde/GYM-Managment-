@@ -1,0 +1,510 @@
+<resources>
+    <string name="app_name">Gym Trainer</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signIn">Sign In</string>
+    <string name="create">Register</string>
+    <string name="login">Login</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="forgot_pass_str">If you have forgotten your password, please enter your  email address below and click \'Reset Password\'  button. You will receive an email that contains a link to reset a new password.</string>
+    <string name="forgot_password_heading">Forgot Password</string>
+    <string name="forgot_password_str">Forgot Your Password?</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="username_email">Username/Email</string>
+    <string name="not_account">Don\'t have an account?</string>
+    <string name="return_to_login_page">Back to Login</string>
+    <string name="have_Account">Already have an account.</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="valid_error_name">Please enter your name.</string>
+    <string name="error_email">Please enter the email.</string>
+    <string name="valid_error_valid_email">Please enter the valid email.</string>
+    <string name="error_password">Please enter the password.</string>
+    <string name="valid_password">Please enter the password greater than 5 characters.</string>
+    <string name="spinner">Please select staff type.</string>
+    <string name="plzSelectStaffname">Please select staff name.</string>
+    <string name="Press_once_again_to_exit">Press once again to exit.</string>
+    <string name="remember_me">Remember Me</string>
+
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Gym Solution</string>
+    <string name="nav_header_subtitle">gym_solution@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_enquiry">Enquiry</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_help">Help</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <string name="registration">Registration</string>
+    <string name="setting">Setting</string>
+    <string name="inventory">Inventory</string>
+    <string name="accounting">Accounting</string>
+    <string name="Enquiry">Enquiry</string>
+
+    //registratrion tab
+    <string name="trainer_employee">Trainer/Employee</string>
+    <string name="renew">Renew</string>
+    <string name="member_group">Member Group</string>
+
+    <string name="Member_group">Member Group</string>
+    <string name="member">Member</string>
+    <string name="member_attendance">Member Attendance</string>
+    <string name="employee_attendance">Employee Attendance</string>
+
+
+    //setting tab
+    <string name="duratio_setting">Duration Setting</string>
+    <string name="workout_category">Workout Category</string>
+    <string name="workout_exercise">Workout Exercise</string>
+    <string name="titleworkout_exercise_list">Workout Exercise List</string>
+    <string name="gym_activity">Gym Activity</string>
+    <string name="gym_package">Gym Package</string>
+    <string name="profile">Profile</string>
+    <string name="duration_period">Duration Period</string>
+    <string name="duration">Duration</string>
+    <string name="period_type">Period Type</string>
+    <string name="add">Add</string>
+    <string name="plz_enter_the_duration">Please enter the duration.</string>
+    <string name="plz_select_the_duration">Please select the duration.</string>
+    <string name="plz_select_the_period">Please select the period.</string>
+    <string name="body_part">Body Part</string>
+    <string name="plz_enter_body_part">Please enter the body part.</string>
+    <string name="plz_select_body_part">Please select the body part.</string>
+    <string name="workout_name">Workout Name</string>
+    <string name="plz_enter_the_exercise">Please enter the workout name.</string>
+
+
+    //inventory tab
+    <string name="gym_equipment">Add Equipment</string>
+    <string name="diet_plan">Diet Plan</string>
+    <string name="add_product">Add Product</string>
+    <string name="sell_product">Sell Product</string>
+    <string name="stock_management">Stock Management</string>
+    <string name="suppliers">Supplier List</string>
+
+    //accounting tab
+    <string name="expense_master">Expense Master</string>
+    <string name="package_payment_history">Package Payment History</string>
+    <string name="salary_management">Salary Management</string>
+    <string name="membership_payment">Membership Payment</string>
+    <string name="balance_sheet">Balance Sheet</string>
+    <string name="transaction_report">Transaction Report</string>
+    <string name="title_activity_renew">Members Renewals List</string>
+
+    //Add Staff
+    <string name="Bio_Matric_ID">Bio Matric ID</string>
+    <string name="staff_type">Staff Type</string>
+    <string name="staff_name">Staff Name</string>
+    <string name="staff_list">Staff List</string>
+    <string name="add_staff">Add Staff</string>
+    <string name="all">All</string>
+    <string name="name_id">Name/ID</string>
+    <string name="full_name">Full Name *</string>
+    <string name="Full_Name">Full Name </string>
+    <string name="contact_no">Phone *</string>
+    <string name="email">Email</string>
+    <string name="email_id">Email *</string>
+    <string name="state">State</string>
+    <string name="city">City *</string>
+    <string name="address">Address</string>
+    <string name="Salary">Salary </string>
+    <string name="personal_training_charge">Training Charge *</string>
+    <string name="birthday">Date of Birth</string>
+    <string name="date_of_joning">Date of Joining *</string>
+    <string name="gender">Gender</string>
+    <string name="memberType">Member Type</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="save">Save</string>
+    <string name="update">update</string>
+    <string name="picture_was_not_taken">Picture was not taken</string>
+
+    //Renew List
+    <string name="individual">Individual</string>
+    <string name="group">Group</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="name">Name</string>
+
+
+    <string name="search">Search</string>
+    <string name="title_activity_member__group">Group List</string>
+    <string name="title_activity_upcoming_renew_list">Renew Member</string>
+    <string name="plz_select_membertype_package">Please select Member Type and Package.</string>
+    <string name="plz_select_month_year">Please select Month and Year.</string>
+    <string name="plz_select_batch">Please select Batch.</string>
+    <string name="plz_select_marital_status">Please select marital status.</string>
+    <string name="plz_select_member_group">Please select memeber group.</string>
+
+    //Add Group
+    <string name="group_name">Group Name</string>
+    <string name="contact_person">Contact Person Name</string>
+    <string name="total_member">Total members</string>
+    <string name="Contact_no">Phone</string>
+    <string name="Mobile_NO">Mobile No</string>
+    <string name="Email_id">Email-Id</string>
+    <string name="State">State</string>
+    <string name="City">City</string>
+    <string name="Address">Address</string>
+    <string name="selectPackage">Select Package</string>
+    <string name="Package">Package</string>
+    <string name="Select_Package">Select Package</string>
+    <string name="Package_amount">Package Charge :</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="personal_trainer">Personal Trainer</string>
+    <string name="trainer">Trainer</string>
+    <string name="trainer_charge">Trainer Charge :</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_add_group">Add Group</string>
+    <string name="edit_group">Edit Group</string>
+    <string name="title_activity_member__list">Member List</string>
+
+    //Memeber List
+    <string name="member_name">Member Name/Contact No.</string>
+    <string name="title_activity_add_member_details">Add Member</string>
+    <string name="members_payment">Member Payment</string>
+    <string name="Name">Name</string>
+    <string name="Gender">Gender</string>
+    <string name="batch">Batch</string>
+    <string name="membertype">Member Type</string>
+    <string name="member_Name">Member Name</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="Birthday"> Date of Birth</string>
+    <string name="Date_of_joning">Date of Joining</string>
+    <string name="savenext">Save &amp; Next</string>
+    <string name="next">Next</string>
+
+    //Member Attendnace
+    <string name="title_activity_member__attendance">Member Attendance</string>
+    <string name="title_activity_add_member_attendance">Add Member Attendance</string>
+
+    //Employee Attendnace
+    <string name="title_activity_employee__attendance">Staff Attendance</string>
+    <string name="title_activity_add_employee__attendance">Add Employee Attendance </string>
+
+
+    //Common Validation
+    <string name="plz_enter_name">Please enter the name.</string>
+    <string name="plz_enter_full_name">Please enter the full name.</string>
+    <string name="plz_enter_contact_no">Please enter the contact number.</string>
+    <string name="plz_enter_valid_contact_no">Please enter the valid contact number.</string>
+    <string name="plz_enter_group_name">Please enter the group name.</string>
+    <string name="plz_enter_contact_person">Please enter the contact person.</string>
+    <string name="plz_enter_training_charge">Please enter the training charge.</string>
+    <string name="plz_enter_email">Please enter the email.</string>
+    <string name="valid_email">Valid email Address.</string>
+    <string name="invalid_email_address">Invalid email address.</string>
+    <string name="plz_enter_address">Please enter the address.</string>
+    <string name="plz_enter_city">Please enter the city.</string>
+    <string name="plz_enter_state">Please enter the state.</string>
+    <string name="plz_enter_totol_members">Please enter the total member.</string>
+    <string name="plz_select_package">Please select the package.</string>
+    <string name="plz_select_status">Please select the status.</string>
+    <string name="plz_select_birthdate">Please select the birthdate.</string>
+    <string name="plz_select_dateOfEqnuiry">Please select the Date of Enquiry.</string>
+    <string name="plz_select_date_of_joning">Please select the joining date.</string>
+    <string name="title_activity_duration__period"> Add Package / Activity Duration</string>
+    <string name="title_activity_workout__category"> Add Workout Category</string>
+    <string name="title_activity_workout__exercise">Add Workout Exercise</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_individual_payment">Individual Member Payment</string>
+
+    //GYM Profile
+    <string name="gymName">Gym Name</string>
+    <string name="gymEmail">Gym Email</string>
+    <string name="currenceType">Currency Type (Ex. INR,USD)</string>
+    <string name="investmentAmount">Investment Amount</string>
+    <string name="invoiceTerms">Invoise Terms</string>
+    <string name="Invoice_Greetings">InvoiceGreetings</string>
+    <string name="Upcoming_renewals">Upcoming Renewals (In Days)</string>
+    <string name="Username">Username</string>
+    <string name="plz_enter_gym_name">Please Enter Gym Name!</string>
+    <string name="plz_enter_currency_type">Please enter currency type!</string>
+    <string name="plz_enter_capital_amount">Please enter capital amount!</string>
+    <string name="plz_enter_username">Please enter username</string>
+    <string name="plz_enter_invoice_terms">Please enter Invoice terms!</string>
+    <string name="plz_enter_greeting">Please enter greeting!</string>
+    <string name="plz_enter_upcoming_renewal">Please enter upcoming renewals!</string>
+
+    <!--Individual member payment-->
+    <string name="registration_amount">Registration Amount</string>
+    <string name="totalPackageAmount">Total Package Amount</string>
+    <string name="package_amount">Package Charge</string>
+    <string name="trainerCharge">Trainer Charge</string>
+    <string name="total_receivable_amount">Total Receivable Amount</string>
+    <string name="discount">Discount</string>
+    <string name="sub_total_amount">Sub Total</string>
+    <string name="payamount">Pay Amount</string>
+    <string name="gst">GST %</string>
+    <string name="net_amount">Net Amount</string>
+    <string name="remaining_amount">Remaining Amount</string>
+    <string name="totalamount">Total Amount</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="payment_option">Payment type</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="cheque_no">Cheque/DD/Reff Number</string>
+    <string name="DD_no" translatable="false">DD No.</string>
+    <string name="plz_select_payment_method">Please select payment option.</string>
+    <string name="title_activity_gym_list_">Activity Package List</string>
+    <string name="title_activity_add_activity">Add Activity Package</string>
+    //Add activity
+    <string name="activity_name">Name</string>
+    <string name="charge">Amount</string>
+    <string name="packageAmount">Package Amount</string>
+    <string name="details">Details</string>
+    <string name="plz_enter_activity_name">Please enter the activity name.</string>
+    <string name="plz_enter_charge">Please enter the amount.</string>
+    <string name="plz_enter_details">Please enter the details.</string>
+
+
+    //Add Package
+    <string name="title_activity_add__package_">Add GYM Package</string>
+    <string name="title_activity_package_list">GYM Package List</string>
+    <string name="activity">Activity</string>
+    <string name="activity_amount">Total Activity Amount</string>
+    <string name="plz_enter_package_name">Please enter the package name.</string>
+    <string name="plz_enter_package_amount">Please enter the package amount.</string>
+    <string name="package_name">Package Name</string>
+
+
+    //Inventory tab / gym equipment
+    <string name="title_activity_gym__equipment_">Equipment List</string>
+    <string name="title_activity_add__equipment_">Add Equipment</string>
+    <string name="purchase_rate">Purchase Rate</string>
+    <string name="equipment_name">Equipment Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="plz_enter_the_equipment_name">Please enter the equipment name.</string>
+    <string name="plz_enter_the_purchase_rate">Please enter the purchase rate.</string>
+    <string name="plz_enter_the_quantity">Please enter the quantity.</string>
+    <string name="title_activity_stock__list_">Stock List</string>
+
+    // manage stock
+    <string name="product_name">Product Name</string>
+    <string name="title_activity_suppliers_">Supplier List</string>
+    <string name="title_activity_add_suppliers_">Add Supplier</string>
+    <string name="type">Type</string>
+    <string name="suppliers_name">Supplier Name *</string>
+    <string name="suppiler_email">supplier Email *</string>
+    <string name="gstin">GST IN</string>
+    <string name="state_code">State Code *</string>
+    <string name="plz_enter_the_supplier_name">Please enter the supplier name.</string>
+    <string name="plz_enter_the_state_code">Please enter the State code.</string>
+
+    //Add Product Tab
+    <string name="title_activity__product_list">Product List</string>
+    <string name="title_activity_add__product_">Add Product </string>
+    <string name="productname_poNumber">Product Name / PO Number</string>
+    <string name="poNumber">PO No.</string>
+    <string name="productname">Product Name</string>
+    <string name="supplier_name">Supplier name</string>
+    <string name="rate">Rate/Qty</string>
+    <string name="subTotal">Sub Total</string>
+    <string name="includeTax">Include Tax</string>
+    <string name="tax">Tax(%)</string>
+    <string name="tax_amount">Tax Amount</string>
+    <string name="grandTotal">Grand Total</string>
+    <string name="plz_enter_the_ponum">Please enter the PO Number.</string>
+    <string name="plz_enter_the_productname">Please enter the product name.</string>
+    <string name="plz_enter_the_rate">Please enter the Rate/Qty.</string>
+    <string name="reorder">Reorder</string>
+
+    //Add Diet Plan
+    <string name="title_activity_diet__list_">Diet List</string>
+    <string name="title_activity_diet_plan_">Add Diet Plan</string>
+    <string name="edit_activity_diet_plan">Edit Diet Plan</string>
+    <string name="Diet_Plan_Name">Diet Plan Name</string>
+    <string name="Pre_Workout">Pre-Workout</string>
+    <string name="Post_Workout">Post-Workout</string>
+    <string name="Breakfast">Breakfast</string>
+    <string name="Morning_Snacks">Morning Snacks</string>
+    <string name="Lunch">Lunch</string>
+    <string name="Evening_Snacks">Evening Snacks</string>
+    <string name="Dinner">Dinner</string>
+    <string name="Meal">Meal</string>
+    <string name="ViewAll">View All</string>
+    <string name="plz_enter_the_value">Please enter the value.</string>
+
+    //Sell Product
+    <string name="title_activity_sell__product__list_">Sell Product List</string>
+    <string name="title_activity_sell__product">Add Sell Product</string>
+    <string name="memberName_contactName">Member Name / Contact Name</string>
+    <string name="memberName">Member Name</string>
+    <string name="Product_Details">Product Details</string>
+    <string name="Select_Product">Select Product</string>
+    <string name="receive_amount">Receive Amount</string>
+    <string name="total">Total</string>
+    <string name="Tax">Tax</string>
+    <string name="Sell_Price">Sell Price</string>
+    <string name="Grand_amount">Grand Amount</string>
+
+    <string name="totalSellAmount">Total Sell Amount</string>
+    <string name="Remaining_amount">Remaining Amount</string>
+
+    // Expense List
+    <string name="month_year">Month-Year</string>
+    <string name="date_wise">Date Wise</string>
+    <string name="title_activity_expense__list_">Expense List</string>
+    <string name="title_activity_add_expense">Add Expense</string>
+    <string name="expense_date">Expense Date</string>
+    <string name="Reference_no">Reference No.</string>
+    <string name="Bill_VoucherNo">Bill / Voucher No.</string>
+    <string name="Party_No">Party Name</string>
+    <string name="Party_GST_No">Party GST No.</string>
+    <string name="Sub_Amount">Sub Total</string>
+    <string name="GST_Applicable">GST Applicable</string>
+    <string name="Payment_mode">Payment Mode</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="plz_select_GST_type">Please select GST type.</string>
+
+
+    //Salary Managment
+    <string name="title_activity_salary_managment">Salary List</string>
+    <string name="title_activity_package_payment_history">Package Payment History</string>
+    <string name="memberNameType">Member Name / Type</string>
+
+    //Transaction Report
+    <string name="title_activity_transaction_report">Transaction Report</string>
+    <string name="transaction_type">Transaction Type</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Membership Payment
+    <string name="title_activity_membership_payment">Membership Payment</string>
+    <string name="pay_all">Pay All</string>
+
+    //Balance Sheet
+    <string name="title_activity_balance_sheet">Balance Sheet</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="description">Description</string>
+    <string name="amount">Amount</string>
+    <string name="expence_amount">Expense Amount</string>
+    <string name="sales_amount">Sales Amount</string>
+    <string name="purchase_amount">Purchase Amount</string>
+    <string name="title_activity_enquiry_">Enquiry Activity</string>
+    <string name="title_activity_add__enquiry_">Add Enquiry</string>
+
+    //Enquiry
+    <string name="referred_by">Referred By</string>
+    <string name="enq_reset">Reset</string>
+    <string name="enquiry">Enquiry</string>
+    <string name="dateofenq">Date of enquiry</string>
+    <string name="followOfUpDate">Follow Up Date</string>
+    <string name="enquired_by">Enquired by</string>
+    <string name="enq_status">Status</string>
+    <string name="enq_add_purpose">Add purpose</string>
+    <string name="enq_add_reason">Add Reason</string>
+    <string name="enq_add_remark">Add Remark</string>
+    <string name="plz_enter_purpose">Please enter purpose.</string>
+    <string name="plz_select_enquiredby">Please select enquiry status.</string>
+
+    //signin
+    <string name="dummytext">Please print the message</string>
+    <string name="ok">OK</string>
+    <string name="logout_message">Do you want to Logout ?</string>
+    <string name="signin_no">No</string>
+    <string name="signin_yes">Yes</string>
+    <string name="package_interested_in">Package interested in</string>
+
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="paynow">Pay Now</string>
+    <string name="viewhistory">View</string>
+
+
+    //Diet/Training Schedule tab
+    <string name="Training_Schedule">Training Schedule</string>
+    <string name="workout">Workout</string>
+    <string name="set">Set</string>
+    <string name="weekDays">Week Days</string>
+    <string name="minutes">Minutes</string>
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Sunday">Sunday</string>
+    <string name="plz_select_the_name">Please select name.</string>
+    <string name="plz_select_checkbox">Please check a checkbox.</string>
+    <string name="plz_select_the_bodypart">Please select body part.</string>
+    <string name="plz_select_the_workout">Please select workout.</string>
+    <string name="plz_select_the_set">Please select set.</string>
+    <string name="plz_enter_minutes">Please enter minutes.</string>
+    <string name="dietTrainingschedule">Diet/Training Schedule</string>
+    <string name="waterIntake">Water Intake</string>
+
+
+    //extra
+    <string name="renew_date">Renew Date</string>
+    <string name="title_activity_water_intake_list_">Water Intake</string>
+    <string name="AddWaterintake">Add Water Intake</string>
+    <string name="Enter_Numbar_of_Glasses">Enter Numbar of Glasses</string>
+
+    <string name="plzenternumberglass">Please enter number of glass.</string>
+
+    //Food Category
+
+    <string name="title_activity_add_food_category">Add Food Category</string>
+    <string name="title_activity_food_category">Food Category</string>
+    <string name="plz_enter_category">Please enter food category.</string>
+    <string name="plz_enter_calories">Please enter total calorie.</string>
+    <string name="title_activity_food_entry_list_">Food Entry</string>
+    <string name="title_activity_add_food_entry_list_">Add Food Entry</string>
+
+
+    <string name="title_activity_add_medical_health_">Medical Health</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="member_name_str">Member Name</string>
+    <string name="weight">Weight *</string>
+    <string name="height">Height *</string>
+    <string name="neck">Neck *</string>
+    <string name="shoulder">Shoulder *</string>
+    <string name="chest">Chest *</string>
+    <string name="upper_arm">Upper Arm</string>
+    <string name="fore_arm">Fore Arm</string>
+    <string name="wrist">Wrist</string>
+    <string name="upper_abdomen">Upper Abdomen* </string>
+    <string name="lower_abdomen">Lower Abdomen *</string>
+    <string name="waist">Waist</string>
+    <string name="hips">Hips</string>
+    <string name="thigh">Thigh</string>
+    <string name="calf">Calf</string>
+    <string name="ankle">Ankle</string>
+
+
+    <string name="history_heart_problem">History of Heart Problem,Chest Pain or Stroke</string>
+    <string name="increased_blood">Increased Blood Pressure</string>
+    <string name="chronic_illness">Any Chronic illness and Condition</string>
+    <string name="difficulty_physical_exercise">Difficulty with Physical Exercise</string>
+    <string name="advise_exercise">Advise to Physician not to Exercise</string>
+    <string name="recent_surgery">Recent surgery(Last 12 months)</string>
+    <string name="history_of_breathing">History of Breathing and Lung Problems</string>
+    <string name="muscle">Muscle joint or Back Disorder or any Previous injury still affecting you</string>
+    <string name="diabetes">Diabetes or Thirod Problem</string>
+    <string name="ciagrette_smoking">Ciagrette Smoking Habbit</string>
+    <string name="increase_blood_cholestrol">Increased Blood Cholestrol</string>
+    <string name="obesity">Obesity</string>
+
+    <string name="paysalary">Pay Salary</string>
+
+    <string name="pysiotheraphy">Physiotherapy Treatment</string>
+    <string name="neck_without_star">Neck</string>
+    <string name="shoulder_star">Shoulder*</string>
+    <string name="chest_star">Chest*</string>
+    <string name="back">Back</string>
+    <string name="abdominal">Abdominal</string>
+    <string name="hand">Hand</string>
+    <string name="legs">Legs</string>
+
+
+    <string name="error">This field is required</string>
+    <string name="memberNameErr">Please select Member Name.</string>
+</resources>
